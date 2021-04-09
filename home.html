@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Jared Matteson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>100 Thieves</title>
+        <style>
+            *{
+                font-family: "Arial Narrow";
+            }
+            body{
+                margin: auto;
+                background-color: black;
+            }
+            #container{
+                display: grid;
+                grid-template: 150px 750px 75% / 1fr 1fr 1fr;
+                grid-template-areas: 'header header header'
+                                        'main main main'
+                                    'footer footer footer';
+                
+            }
+            header {
+                grid-area: header;
+                margin-left: 1%;
+                margin-right: 1%;
+                border-bottom: solid rgb(128, 0, 0);
+                display: grid;
+                grid-template: 150px / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                align-content: center;
+                justify-content: center;
+                
+            }
+            main{ grid-area: main;
+            }
+            footer{ 
+                grid-area: footer;
+                border-top: solid rgb(128, 0, 0);
+                background-color: white;
+                display:grid;
+                width: 100%;
+                grid-template: 200px / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                align-content: top;
+                justify-content:right;
+               
+
+            }
+            #thieves_logo{
+                height: 100%;
+            }
+            #topnav a {
+                color: rgb(128,0,0);
+                justify-self:center;
+                align-self: center;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            #topnav input{
+                justify-self: center;
+                align-self: center;
+                border-radius: 8px;
+                height: 3vh;
+                width: 15vw;
+            }
+            #topnav a:hover{
+                background-color: rgb(128,0,0);
+                color: white;
+            }
+            
+            #botnav a {
+                color: rgb(128,0,0);
+                justify-self:center;
+                align-self: center;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            #twitter_logo{
+                height: 25%;
+            }
+            #insta_logo{
+                height: 25%;
+            }
+            #youtube_logo{
+                height: 25%;
+            }
+            
+            .socials{
+                justify-self: right;
+                align-self: right;
+            }
+           /* .box_item1{                
+                width: 70%;
+                height: 80%;
+                border: solid white;
+                
+            }
+            .box_item2
+            {
+                height: 80%;
+                width: 30%;
+                border: solid white;
+            }
+            #flexcontainer{
+                display: flex;
+                
+            }
+            
+            
+            #logo_container{
+                height: 150px;
+            }
+            
+            
+            */
+
+    
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header id="topnav">
+                <div id="logo_container">
+                    <a class="active" href="#home">
+                        <img id="thieves_logo" src="images/100 Thieves Transparent.png" alt="Thieves Logo">
+                    </a>
+                </div>
+                <a href="#LA_Thieves_Shop">LA THIEVES SHOP</a>
+                <a href="#Content_Creators">CONTENT CREATORS</a>
+                <a href="#Teams">TEAMS</a>
+                <input type="text" placeholder="SEARCH...">
+                <a href="#Login">LOGIN</a>
+                <a href="#Bag">BAG(0)</a>
+                
+            </header>
+            <main id="flexcontainer">
+                <aside class= "box_item1">
+                    <h1>Box2</h1>
+                </aside>
+                <aside class="box_item2">
+                    <h1>Box3</h1>
+                </aside>
+            </main>
+
+            <footer id="botnav">
+                <a href="#About">ABOUT</a>
+                <a href="#News">NEWS</a>
+                <a href="#Partners">PARTNERS</a>
+                <a href="#Careers">CAREERS</a>
+                <a href="#Contact">CONTACT</a>
+                <a href="#FAQ">FAQ</a>
+                <div class="socials">
+                    <a href="#Twitter">
+                        <img id="twitter_logo" src="images/Red Twitter icon.png" alt="Thieves Twitter">
+                    </a>
+                    <a href="#Instagram">
+                        <img id="insta_logo" src="images/red instagram logo.png" alt="Thieves Instagram">
+                    </a>
+                    <a href="#Youtube">
+                        <img id="youtube_logo" src="images/youtube logo.png" alt="Thieves Youtube">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
